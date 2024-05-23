@@ -61,10 +61,19 @@ fi
 
 # Animated - Motion models
 # temporaldiff-v1-animatediff
-model_file=${animated_models_dir}/temporaldiff-v1-animatediff.ckpt
-model_url=https://huggingface.co/CiaraRowles/TemporalDiff/blob/main/temporaldiff-v1-animatediff.ckpt
+model_file=${animated_models_dir}/temporaldiff-v1-animatediff.safetensors
+model_url=https://huggingface.co/CiaraRowles/TemporalDiff/resolve/main/temporaldiff-v1-animatediff.safetensors
 if [[ ! -e ${model_file} ]]; then
     printf "temporaldiff-v1-animatediff...\n"
+    download ${model_url} ${model_file}
+fi
+
+# Animated - Motion models
+# mm_sd_v15_v2.ckpt
+model_file=${animated_models_dir}/mm_sd_v15_v2.ckpt
+model_url=https://huggingface.co/guoyww/animatediff/resolve/main/mm_sd_v15_v2.ckpt
+if [[ ! -e ${model_file} ]]; then
+    printf "mm_sd_v15_v2...\n"
     download ${model_url} ${model_file}
 fi
 
@@ -83,6 +92,14 @@ model_url=https://civitai.com/api/download/models/128713
 
 if [[ ! -e ${model_file} ]]; then
     printf "Downloading dreamshaper_8...\n"
+    download ${model_url} ${model_file}
+fi
+
+model_file=${checkpoints_dir}/toonyou_beta6.safetensors
+model_url=https://civitai.com/api/download/models/125771
+
+if [[ ! -e ${model_file} ]]; then
+    printf "Downloading toonyou_beta6.safetensors...\n"
     download ${model_url} ${model_file}
 fi
 
