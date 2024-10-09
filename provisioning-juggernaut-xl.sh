@@ -25,7 +25,8 @@ NODES=(
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
     "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
     # "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
-    "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
+    # "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
+    "https://github.com/jags111/efficiency-nodes-comfyui"
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/alexopus/ComfyUI-Image-Saver"
@@ -65,14 +66,20 @@ IPADAPTER=(
 )
 
 CHECKPOINT_MODELS=(
+    "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16" # juggernautXL_juggXIByRundiffusion.safetensors    
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # "https://civitai.com/api/download/models/351306?type=Model&format=SafeTensor&size=full&fp=fp16" # dreamshaperXL_v21TurboDPMSDE.safetensors
     # "https://civitai.com/api/download/models/90072?type=Model&format=SafeTensor&size=pruned&fp=fp16" # photon_v1.safetensors
-    "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16" # juggernautXL_juggXIByRundiffusion.safetensors
     # "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors"
+    # "https://civitai.com/api/download/models/143906?type=Model&format=SafeTensor&size=pruned&fp=fp16" # epicrealism_naturalSinRC1VAE.safetensors
+    # "https://civitai.com/api/download/models/501240?type=Model&format=SafeTensor&size=full&fp=fp16" # realisticVisionV60B1_v51HyperVAE.safetensors
+    # "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16" # realvisxlV50_v50LightningBakedvae.safetensors
+    # "https://civitai.com/api/download/models/570138?type=Model&format=SafeTensor&size=pruned&fp=fp16" # leosamsHelloworldXL_helloworldXL70.safetensors
+    # "https://civitai.com/api/download/models/132760?type=Model&format=SafeTensor&size=pruned&fp=fp16" # absolutereality_v181.safetensors 
+    # "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16" # dreamshaper_8.safetensors
 )
 
 UNET_MODELS=(
@@ -84,6 +91,7 @@ LORA_MODELS=(
     # "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_4step_lora.safetensors"
     # "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_8step_lora.safetensors"
     # https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors #flux-RealismLora.safetensors
+    # https://civitai.com/api/download/models/812954?type=Model&format=SafeTensor # https://civitai.com/models/727033/cinematic-style-analog-film-photorealism
 )
 
 VAE_MODELS=(
