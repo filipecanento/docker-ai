@@ -24,15 +24,19 @@ NODES=(
     "https://github.com/BadCafeCode/masquerade-nodes-comfyui"
     "https://github.com/Fannovel16/comfyui_controlnet_aux"
     "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
-    # "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
-    # "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
-    "https://github.com/jags111/efficiency-nodes-comfyui"
+    "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
+    "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
     "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/alexopus/ComfyUI-Image-Saver"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
     "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus"
     "https://github.com/cubiq/ComfyUI_essentials"
     "https://github.com/giriss/comfy-image-saver"
+    "https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words"
+    "https://github.com/jags111/efficiency-nodes-comfyui"
     "https://github.com/jags111/efficiency-nodes-comfyui"
     "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
     "https://github.com/ltdrdata/ComfyUI-Manager"
@@ -40,6 +44,7 @@ NODES=(
     "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/pythongosssss/ComfyUI-WD14-Tagger"
     "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/shiimizu/ComfyUI-TiledDiffusion"
     "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
     "https://github.com/storyicon/comfyui_segment_anything"
 )
@@ -97,12 +102,14 @@ LORA_MODELS=(
 VAE_MODELS=(
     # "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors"
+    # "https://huggingface.co/stabilityai/sdxl-vae/resolve/main/sdxl_vae.safetensors"
 )
 
 ESRGAN_MODELS=(
     # "https://huggingface.co/ai-forever/Real-ESRGAN/resolve/main/RealESRGAN_x4.pth"
     # "https://huggingface.co/FacehugmanIII/4x_foolhardy_Remacri/resolve/main/4x_foolhardy_Remacri.pth"
     "https://huggingface.co/Akumetsu971/SD_Anime_Futuristic_Armor/resolve/main/4x_NMKD-Siax_200k.pth"
+    # "https://huggingface.co/epishchik/RealESRGAN_x4plus_anime_6B/resolve/main/model.safetensors"
 )
 
 CONTROLNET_MODELS=(
@@ -130,7 +137,7 @@ function provisioning_start() {
     provisioning_get_nodes
     provisioning_get_pip_packages
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/ckpt" \
+        "${WORKSPACE}/storage/stable_diffusion/models/checkpoints" \
         "${CHECKPOINT_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/unet" \
