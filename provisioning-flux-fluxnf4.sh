@@ -19,26 +19,31 @@ PIP_PACKAGES=(
 )
 
 NODES=(
-    "https://github.com/ltdrdata/ComfyUI-Manager"
-    "https://github.com/cubiq/ComfyUI_essentials"
-    "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
-    "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
-    "https://github.com/rgthree/rgthree-comfy"
-    "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
-    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
-    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
-    "https://github.com/WASasquatch/was-node-suite-comfyui"
-    "https://github.com/Fannovel16/comfyui_controlnet_aux"
-    "https://github.com/jags111/efficiency-nodes-comfyui"
     "https://github.com/BadCafeCode/masquerade-nodes-comfyui"
-    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
-    "https://github.com/melMass/comfy_mtb"
+    "https://github.com/Fannovel16/comfyui_controlnet_aux"
+    "https://github.com/Kosinkadink/ComfyUI-Advanced-ControlNet"
+    "https://github.com/Kosinkadink/ComfyUI-AnimateDiff-Evolved"
+    "https://github.com/LucianoCirino/efficiency-nodes-comfyui"
     "https://github.com/Suzie1/ComfyUI_Comfyroll_CustomNodes"
-    "https://github.com/storyicon/comfyui_segment_anything"
+    "https://github.com/WASasquatch/was-node-suite-comfyui"
     "https://github.com/alexopus/ComfyUI-Image-Saver"
+    "https://github.com/chrisgoringe/cg-use-everywhere"
     "https://github.com/comfyanonymous/ComfyUI_bitsandbytes_NF4"
+    "https://github.com/crystian/ComfyUI-Crystools"
+    "https://github.com/cubiq/ComfyUI_IPAdapter_plus"
+    "https://github.com/cubiq/ComfyUI_essentials"
+    "https://github.com/giriss/comfy-image-saver"
+    "https://github.com/idrirap/ComfyUI-Lora-Auto-Trigger-Words"
+    "https://github.com/jags111/efficiency-nodes-comfyui"
+    "https://github.com/ltdrdata/ComfyUI-Impact-Pack"
+    "https://github.com/ltdrdata/ComfyUI-Manager"
+    "https://github.com/melMass/comfy_mtb"
+    "https://github.com/pythongosssss/ComfyUI-Custom-Scripts"
     "https://github.com/pythongosssss/ComfyUI-WD14-Tagger"
-    
+    "https://github.com/rgthree/rgthree-comfy"
+    "https://github.com/shiimizu/ComfyUI-TiledDiffusion"
+    "https://github.com/ssitu/ComfyUI_UltimateSDUpscale"
+    "https://github.com/storyicon/comfyui_segment_anything"
 )
 
 CLIP_MODELS=(
@@ -63,28 +68,35 @@ IPADAPTER=(
 )
 
 CHECKPOINT_MODELS=(
+    "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16" # juggernautXL_juggXIByRundiffusion.safetensors    
     # "https://huggingface.co/runwayml/stable-diffusion-v1-5/resolve/main/v1-5-pruned-emaonly.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-2-1/resolve/main/v2-1_768-ema-pruned.ckpt"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors"
     # "https://huggingface.co/stabilityai/stable-diffusion-xl-refiner-1.0/resolve/main/sd_xl_refiner_1.0.safetensors"
     # "https://civitai.com/api/download/models/351306?type=Model&format=SafeTensor&size=full&fp=fp16" # dreamshaperXL_v21TurboDPMSDE.safetensors
     # "https://civitai.com/api/download/models/90072?type=Model&format=SafeTensor&size=pruned&fp=fp16" # photon_v1.safetensors
-    # "https://civitai.com/api/download/models/782002?type=Model&format=SafeTensor&size=full&fp=fp16" # juggernautXL_juggXIByRundiffusion.safetensors
-    "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors"
+    # "https://huggingface.co/lllyasviel/flux1-dev-bnb-nf4/resolve/main/flux1-dev-bnb-nf4-v2.safetensors"
+    # "https://civitai.com/api/download/models/143906?type=Model&format=SafeTensor&size=pruned&fp=fp16" # epicrealism_naturalSinRC1VAE.safetensors
+    # "https://civitai.com/api/download/models/501240?type=Model&format=SafeTensor&size=full&fp=fp16" # realisticVisionV60B1_v51HyperVAE.safetensors
+    # "https://civitai.com/api/download/models/798204?type=Model&format=SafeTensor&size=full&fp=fp16" # realvisxlV50_v50LightningBakedvae.safetensors
+    # "https://civitai.com/api/download/models/570138?type=Model&format=SafeTensor&size=pruned&fp=fp16" # leosamsHelloworldXL_helloworldXL70.safetensors
+    # "https://civitai.com/api/download/models/132760?type=Model&format=SafeTensor&size=pruned&fp=fp16" # absolutereality_v181.safetensors 
+    # "https://civitai.com/api/download/models/128713?type=Model&format=SafeTensor&size=pruned&fp=fp16" # dreamshaper_8.safetensors
 )
 
 UNET_MODELS=(
-    "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
+    # "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/flux1-dev.safetensors"
 )
 
 LORA_MODELS=(
-    # "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
-    # "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_4step_lora.safetensors"
-    # "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_8step_lora.safetensors"
+    "https://huggingface.co/wangfuyun/AnimateLCM/resolve/main/AnimateLCM_sd15_t2v_lora.safetensors"
+    "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_4step_lora.safetensors"
+    "https://huggingface.co/ByteDance/SDXL-Lightning/resolve/main/sdxl_lightning_8step_lora.safetensors"
+    "https://huggingface.co/XLabs-AI/flux-RealismLora/resolve/main/lora.safetensors" #flux-RealismLora.safetensors
 )
 
 VAE_MODELS=(
-    # "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
+    "https://huggingface.co/stabilityai/sd-vae-ft-mse-original/resolve/main/vae-ft-mse-840000-ema-pruned.safetensors"
     "https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors"
 )
 
@@ -137,7 +149,7 @@ function provisioning_start() {
         "${WORKSPACE}/storage/stable_diffusion/models/esrgan" \
         "${ESRGAN_MODELS[@]}"
     provisioning_get_models \
-        "${WORKSPACE}/storage/stable_diffusion/models/animatediff" \
+        "${WORKSPACE}/storage/stable_diffusion/models/animatediff_models" \
         "${ANIMATED_DIFF_MODELS[@]}"
     provisioning_get_models \
         "${WORKSPACE}/storage/stable_diffusion/models/clip" \
